@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Áreas del Gym</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="estilos/estilo5.css">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas del Gym - Pesitas</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos/estilo5.css"> </head>
+<body class="text-light">
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">
-        <img src="imgs/gym6.jpeg" alt="Logo Gabriel Aranibar" class="navbar-logo" height="55px" width="55px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="areas.html">Áreas</a></li>
-          <li class="nav-item"><a class="nav-link" href="quienesomos.html">Quiénes Somos</a></li>
-          <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-          <li class="nav-item"><a class="nav-link" href="ejercicio.html">Ejercicio</a></li>
+    <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel">
+      <div class="offcanvas-header bg-warning">
+        <h5 class="offcanvas-title text-dark" id="mobileOffcanvasLabel">Menú de Navegación</h5>
+        <button type="button" class="btn-close text-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-column">
+            <li class="nav-item"><a class="nav-link text-white py-2" href="inicio.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-2" href="areas.html">Áreas</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-2" href="quienesomos.html">Quiénes Somos</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-2" href="Eventos.html">Eventos</a></li> <li class="nav-item"><a class="nav-link text-white py-2" href="ejercicio.html">Ejercicio</a></li>
         </ul>
       </div>
     </div>
-  </nav>
+    <nav class="navbar navbar-light bg-warning">
+        <div class="container-fluid"> <a class="navbar-brand fw-bold" href="index.html">
+                <img src="imgs/gym6.jpeg" alt="Logo Gabriel Aranibar" class="navbar-logo" height="55px" width="55px">
+            </a>
+            
+            <ul class="navbar-nav flex-row ms-auto me-2">
+                <li class="nav-item mx-2"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="areas.html">Áreas</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="quienesomos.html">Quiénes Somos</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="eventos.html">Eventos</a></li> <li class="nav-item mx-2"><a class="nav-link" href="ejercicio.html">Ejercicio</a></li>
+            </ul>
 
-  <!-- CAROUSEL -->
-  <div class="container py-5">
-    <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imgs/powerlifting.jpeg" class="d-block w-100 rounded" alt="Máquinas">
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/powerlifting.jpeg" class="d-block w-100 rounded" alt="Zona de Powerlifting">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/pesas.jpeg" class="d-block w-100 rounded" alt="Zona de Pesas">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/cardio.jpeg" class="d-block w-100 rounded" alt="Zona de Cardio">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/funcional.jpeg" class="d-block w-100 rounded" alt="Zona Funcional">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-  </div>
 
-  <!-- CARDS DE ÁREAS -->
-  <div class="container py-5">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="imgs/pesas.jpeg" class="card-img-top" alt="Zona de Pesas">
-          <div class="card-body">
-            <h5 class="card-title">Zona de Pesas</h5>
-            <p class="card-text">Aquí es donde se construye la fuerza de verdad.
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-light bg-dark"> <img src="imgs/pesas.jpeg" class="card-img-top" alt="Zona de Pesas">
+                    <div class="card-body">
+                        <h5 class="card-title">Zona de Pesas</h5>
+                        <p class="card-text">Aquí es donde se construye la fuerza de verdad.
 Nuestra *zona de pesas* está equipada con todo lo que necesitas para entrenar al máximo nivel: mancuernas, discos olímpicos, máquinas de aislamiento, racks, barras y bancos profesionales.
 Ya sea que entrenes para *hipertrofia, tonificación o fuerza bruta*, este es tu territorio.
 *En Pesitas, cada repetición te acerca a tu mejor versión.*</p>
-          </div>
-        </div>
-      </div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="imgs/cardio.jpeg" class="card-img-top" alt="Zona Cardio">
-          <div class="card-body">
-            <h5 class="card-title">Zona Cardio</h5>
-            <p class="card-text">Activa tu energía y fortalece tu resistencia.
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-light bg-dark"> <img src="imgs/cardio.jpeg" class="card-img-top" alt="Zona Cardio">
+                    <div class="card-body">
+                        <h5 class="card-title">Zona Cardio</h5>
+                        <p class="card-text">Activa tu energía y fortalece tu resistencia.
 En nuestra *zona de cardio* encontrarás caminadoras, bicicletas estáticas, elípticas, remadoras y más, todo listo para ayudarte a *quemar grasa, mejorar tu salud cardiovascular y complementar tu entrenamiento*.
 Ya sea para calentar, soltar estrés o mejorar tu rendimiento, aquí es donde tu corazón marca el ritmo.
 *Respira profundo, acelera… y no te detengas.*</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="imgs/funcional.jpeg" class="card-img-top" alt="Zona Powerlifting">
-          <div class="card-body">
-            <h5 class="card-title">Zona Powerlifting</h5>
-            <p class="card-text">Bienvenido al terreno de los pesos pesados.
-Nuestra zona de powerlifting está equipada con plataformas profesionales, racks de competencia, discos calibrados y barras olímpicas listas para soportar cada intento al límite.
-Aquí entrenamos los tres grandes: sentadilla, press de banca y peso muerto, con técnica, disciplina y enfoque.
-
-Si tu meta es superar tus marcas, competir o simplemente entrenar con seriedad, esta es tu zona.
-En Pesitas, no solo levantamos peso… levantamos orgullo.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="bg-warning text-center text-dark py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-3 mb-md-0">
-                <p class="mb-0 small">&copy; 2025 Pesitas Gym. Todos los derechos reservados.</p>
-                <p class="mb-0 small">Diseñado por Gabriel Aranibar</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <p class="mb-2 lead fw-bold">Síguenos en redes:</p>
-                <a href="https://www.instagram.com/pesitasgym?igsh=MTBpNjZ1NmJnaGozNw==" target="_blank" class="text-dark mx-2 footer-icon-link">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://www.facebook.com/share/18u2qohr1G/?mibextid=qi2Omg" target="_blank" class="text-dark mx-2 footer-icon-link">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-light bg-dark"> <img src="imgs/funcional.jpeg" class="card-img-top" alt="Zona Funcional & Cross Training"> <div class="card-body">
+                        <h5 class="card-title">Zona Funcional & Cross Training</h5> <p class="card-text">Bienvenido al terreno del entrenamiento dinámico.
+Nuestro espacio funcional está equipado con sogas, cajas pliométricas, balones medicinales, kettlebells, escaleras de agilidad y más.
+Diseñada para entrenamientos por circuito, HIIT, movilidad, explosividad y rendimiento general.
+Si tu meta es mejorar tu agilidad, resistencia y fuerza funcional, esta es tu zona.
+En Pesitas, no solo levantamos peso… levantamos orgullo.</p> </div>
+                </div>
             </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-light bg-dark">
+                    <img src="imgs/powerlifting.jpeg" class="card-img-top" alt="Zona Powerlifting">
+                    <div class="card-body">
+                        <h5 class="card-title">Zona Powerlifting y Levantamiento Olímpico</h5>
+                        <p class="card-text">Nuestra zona más técnica y competitiva. Plataformas profesionales, bumper plates certificados, barras olímpicas y seguimiento personalizado para quienes entrenan *arranque, envión, sentadilla, peso muerto y press banca*.
+                        Perfecta para atletas que buscan mejorar marcas o competir en eventos.
+                        *Aquí se entrena la verdadera fuerza.*</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-light bg-dark">
+                    <img src="imgs/art6.jpeg" class="card-img-top" alt="Salón de Clases Grupales">
+                    <div class="card-body">
+                        <h5 class="card-title">Salón de Clases Grupales</h5>
+                        <p class="card-text">Ritmo, energía y comunidad. Zumba, baile funcional, aeróbicos y sesiones de alta quema calórica para quienes buscan entrenar en grupo con música y diversión. Instructores certificados te guían en cada sesión.
+                        *¡Entrena en equipo, celebra en grande!*</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</footer>
+
+    <footer class="bg-warning text-center text-dark py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 small">&copy; 2025 Pesitas Gym. Todos los derechos reservados.</p>
+                    <p class="mb-0 small">Diseñado por Gabriel Aranibar</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-2 lead fw-bold">Síguenos en redes:</p>
+                    <a href="https://www.instagram.com/pesitasgym?igsh=MTBpNjZ1NmJnaGozNw==" target="_blank" class="text-dark mx-2 footer-icon-link">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/18u2qohr1G/?mibextid=qi2Omg" target="_blank" class="text-dark mx-2 footer-icon-link">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
